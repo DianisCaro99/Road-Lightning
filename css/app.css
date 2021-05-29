@@ -2362,12 +2362,12 @@ img {
 }
 
 .btn_orange {
-  background: #FF6E30;
+  background: #028389;
   color: #ffffff;
 }
 
 .btn_orange:hover {
-  background: #fc4b00;
+  background: #045357;
 }
 
 .btn_transparent {
@@ -2503,7 +2503,7 @@ body.dark .btn_border:hover .icon {
 }
 
 .header__link.active {
-  color: #FF6E30;
+  color: #028389;
 }
 
 .header__link:not(:last-child) {
