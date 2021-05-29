@@ -72,16 +72,20 @@ if (localStorage.getItem('darkMode') === "on") {
           </div>
           <div class="contact__wrap">
             <h1 class="contact__title h2" data-aos="animation-scale-top" data-aos-duration="600">Contact Us</h1>
-            <div class="contact__info">Questions, bug reports, feedback.</div>
-            <form class="contact__form">
+            <div class="contact__info">Questions, problem reports, feedback</div>
+            <form class="contact__form" action="https://formspree.io/f/mayaojpy" method="POST">
               <div class="field">
                 <div class="field__label">Your email</div>
-                <div class="field__wrap"><input class="field__input" type="email" placeholder="Enter your email"></div>
+                <div class="field__wrap">
+                <input class="field__input" type="email" placeholder="Enter your email" name="_replyto">
+                </div>
               </div>
               <div class="field">
                 <div class="field__label">Tell us what you need help with:</div>
-                <div class="field__wrap"><textarea class="field__textarea" placeholder="Enter a topic, like “channel problem...”"></textarea></div>
-              </div><button class="contact__btn btn btn_orange">Send now</button>
+                <div class="field__wrap">
+                <textarea class="field__textarea" placeholder="Enter a topic, like “request a prototype...”" name="message"></textarea>
+                </div>
+              </div><button class="contact__btn btn btn_orange" type="submit">Send now</button>
             </form>
           </div>
         </div>
