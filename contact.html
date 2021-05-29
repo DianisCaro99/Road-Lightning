@@ -42,20 +42,15 @@ if (viewportmeta) {
 }</script>
   </head>
   <body>
-    <script>console.log(localStorage.getItem('darkMode'));
-if (localStorage.getItem('darkMode') === "on") {
-		document.body.classList.add("dark");
-		document.addEventListener("DOMContentLoaded", function() {
-		  document.querySelector('.js-switch-theme input').checked = true;
-		});
-}
-</script>
     <div class="page">
       <header class="header">
         <div class="header__center center"><a class="header__logo" href="index.html"><img class="header__pic header__pic_dark" src="img/logo-dark.png" alt="" /><img class="header__pic header__pic_light" src="img/logo-light.png" alt="" /></a>
           <div class="header__wrapper">
-            <nav class="header__nav"><a class="header__link" href="downloads.html">Downloads</a><a class="header__link" href="pricing.html">Pricing</a><a class="header__link" href="features.html">Features</a><a class="header__link" href="about-us.html">About Us</a><a class="header__link active" href="contact.html">Contact</a></nav>
-            <div class="header__btns"><a class="header__btn btn btn_transparent js-popup-open" href="contact.html#popup-sign-in" data-effect="mfp-zoom-in">Login</a><a class="header__btn btn btn_orange js-popup-open" href="contact.html#popup-sign-up" data-effect="mfp-zoom-in">Sign up</a></div>
+            <nav class="header__nav">
+              <a class="header__link" href="downloads.html">Product</a>
+              <a class="header__link" href="about-us.html">About Us</a>
+              <a class="header__link active" href="contact.html">Contact</a>
+            </nav>
             <picture class="header__preview">
               <source media="(max-width: 767px)" srcset="img/header-pic-mobile@2x.png, img/header-pic-mobile@2x.png 2x" /><img srcset="img/header-pic@2x.png 2x" src="img/header-pic.png" alt="" /></picture>
           </div><button class="header__burger"></button>
@@ -94,57 +89,19 @@ if (localStorage.getItem('darkMode') === "on") {
         <div class="footer__center center">
           <div class="footer__body">
             <div class="footer__wrap"><a class="footer__logo" href="index.html"><img class="footer__pic footer__pic_dark" src="img/logo-dark.png" alt="" /><img class="footer__pic footer__pic_light" src="img/logo-light.png" alt="" /></a>
-              <div class="footer__text">Join millions of people who organize work and life with Solo App.</div>
-            </div>
-            <div class="footer__line">
-              <div class="footer__downloads"><a class="footer__download" href="contact.html#"><img src="img/google-play.svg" alt="" /></a><a class="footer__download" href="contact.html#"><img src="img/app-store.svg" alt="" /></a></div>
-              <div class="footer__nav"><a class="footer__link" href="downloads.html">Downloads</a><a class="footer__link" href="pricing.html">Pricing</a><a class="footer__link" href="features.html">Features</a><a class="footer__link" href="about-us.html">About Us</a><a class="footer__link active" href="contact.html">Contact</a></div>
             </div>
           </div>
           <div class="footer__bottom">
             <div class="footer__copyright">© Solo Inc. Designed by UI8 Team</div>
-            <div class="footer__social"><a class="footer__link" href="contact.html#"><svg class="icon icon-facebook">
+            <div class="footer__social"><a class="footer__link" href="about-us.html#"><svg class="icon icon-facebook">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                </svg></a><a class="footer__link" href="contact.html#"><svg class="icon icon-twitter">
+                </svg></a><a class="footer__link" href="about-us.html#"><svg class="icon icon-twitter">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                </svg></a><a class="footer__link" href="contact.html#"><svg class="icon icon-instagram">
+                </svg></a><a class="footer__link" href="about-us.html#"><svg class="icon icon-instagram">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg></a></div>
           </div>
-        </div><label class="switch js-switch-theme"><input class="switch__input" type="checkbox" /><span class="switch__in"><span class="switch__box"></span><span class="switch__icon switch__icon_dark"><svg class="icon icon-dark">
-                <use xlink:href="img/sprite.svg#icon-dark"></use>
-              </svg></span><span class="switch__icon switch__icon_light"><svg class="icon icon-light">
-                <use xlink:href="img/sprite.svg#icon-light"></use>
-              </svg></span></span></label>
-      </div>
-      <div class="popup mfp-hide" id="popup-sign-up">
-        <div class="popup__title h2">Sign up</div>
-        <div class="popup__variants"><a class="popup__variant" href="contact.html#"><img src="img/google.svg" alt="">Sign up via Google</a><a class="popup__variant" href="contact.html#"><img src="img/apple.svg" alt="">Sign up via Apple</a></div>
-        <div class="popup__details">Or continue with email</div>
-        <div class="popup__btns"><a class="popup__btn btn btn_dark js-popup-open" href="contact.html#popup-code" data-effect="mfp-zoom-in">Enter your email</a><a class="popup__btn btn btn_orange js-popup-open" href="contact.html#popup-code" data-effect="mfp-zoom-in">Continue</a></div>
-        <div class="popup__note">By clicking the Continue button, you agree to the terms of service and privacy policy.</div>
-      </div>
-      <div class="popup mfp-hide" id="popup-code">
-        <div class="popup__title h2">Check your <br>inbox</div>
-        <div class="popup__info">Solo just sent you a 6-Digit Code to <a href="mailto:tam@ui8.net">tam@ui8.net</a> please check your inbox and enter the code below.</div>
-        <div class="popup__code">
-          <div class="popup__number"><input type="tel"></div>
-          <div class="popup__number"><input type="tel"></div>
-          <div class="popup__number"><input type="tel"></div>
-          <div class="popup__number"><input type="tel"></div>
-          <div class="popup__number"><input type="tel"></div>
-          <div class="popup__number"><input type="tel"></div>
-        </div>
-        <div class="popup__btns"><button class="popup__btn btn btn_orange">Enter</button><a class="popup__link" href="contact.html#">Resend digit code</a></div>
-      </div>
-      <div class="popup mfp-hide" id="popup-sign-in">
-        <div class="popup__title h2">Sign in</div>
-        <div class="popup__variants"><a class="popup__variant" href="contact.html#"><img src="img/google.svg" alt="">Sign up via Google</a><a class="popup__variant" href="contact.html#"><img src="img/apple.svg" alt="">Sign up via Apple</a></div>
-        <div class="popup__details">Or continue with email & password</div>
-        <div class="popup__btns"><a class="popup__btn btn btn_dark js-popup-open" href="contact.html#popup-code" data-effect="mfp-zoom-in">Enter your email</a><a class="popup__btn btn btn_dark js-popup-open" href="contact.html#popup-code" data-effect="mfp-zoom-in">Password</a><a class="popup__btn btn btn_orange js-popup-open" href="contact.html#popup-code" data-effect="mfp-zoom-in">Sign In</a></div>
-        <div class="popup__note"> </div>
-      </div>
-    </div><!-- scripts-->
+    </div>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/svg4everybody.min.js"></script>
     <script src="js/lib/owl.carousel.min.js"></script>
