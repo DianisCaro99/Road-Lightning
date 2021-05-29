@@ -2688,7 +2688,7 @@ body.dark .header__burger:before, body.dark .header__burger:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -16px;
+  margin: 16px -16px;
 }
 
 .main__logo {
@@ -3132,7 +3132,7 @@ body.dark .steps__icon path {
 
 .advantages__wrap {
   max-width: 405px;
-  padding-right: 55px;
+  padding-right: 45px;
 }
 
 .advantages__icon {
@@ -3148,7 +3148,7 @@ body.dark .steps__icon path {
 }
 
 .advantages__text {
-  max-width: 265px;
+  max-width: 330px;
   margin-bottom: 40px;
 }
 
