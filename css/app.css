@@ -2699,7 +2699,7 @@ body.dark .header__burger:before, body.dark .header__burger:after {
 }
 
 .main__logo img {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .main:not(:last-child) {
