@@ -2847,9 +2847,9 @@ body.dark .header__burger:before, body.dark .header__burger:after {
   margin: -21px 8px 0;
   padding: 0 50px;
   border-radius: 0 0 24px 24px;
-  background: -webkit-linear-gradient(359.67deg, #FEA989 0.02%, #99B4DB 98.92%);
-  background: -o-linear-gradient(359.67deg, #FEA989 0.02%, #99B4DB 98.92%);
-  background: linear-gradient(90.33deg, #FEA989 0.02%, #99B4DB 98.92%);
+  background: -webkit-linear-gradient(359.67deg, #028389 0.02%, #6EB4B6 98.92%);
+  background: -o-linear-gradient(359.67deg, #028389 0.02%, #6EB4B6 98.92%);
+  background: linear-gradient(90.33deg, #028389 0.02%, #6EB4B6 98.92%);
 }
 
 .quality__item {
