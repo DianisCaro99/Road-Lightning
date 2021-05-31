@@ -2449,7 +2449,7 @@ body.dark .btn_border:hover .icon {
 }
 
 .header__pic {
-  width: 138px;
+  width: 160px;
 }
 
 .header__pic_light {
@@ -3926,12 +3926,12 @@ body.dark .review .owl-carousel .owl-nav button.owl-next:hover .icon {
 }
 
 .footer__body {
-  margin-bottom: 55px;
+  margin-bottom: 10px;
 }
 
 .footer__wrap {
   max-width: 345px;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .footer__logo {
