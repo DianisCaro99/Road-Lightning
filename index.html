@@ -26,15 +26,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" media="all" href="css/app.css">
-    <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
-if (viewportmeta) {
-  if (screen.width < 375) {
-    var newScale = screen.width / 375;
-    viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
-  } else {
-    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-  }
-}</script>
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta) {
+        if (screen.width < 375) {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+        } else {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH9S17BJNH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BH9S17BJNH');
+    </script>
   </head>
   <body>
     <script>console.log(localStorage.getItem('darkMode'));
@@ -67,7 +78,7 @@ if (localStorage.getItem('darkMode') === "on") {
         <div class="main__center center">
           <div class="main__wrap">
             <h1 class="main__title d1"><span data-aos="animation-scale-top" data-aos-duration="600">The light that</span><span data-aos="animation-scale-top" data-aos-duration="600" data-aos-delay="200"></span>keeps you </span><span data-aos="animation-scale-top" data-aos-duration="600" data-aos-delay="400">safe on the road.</span></h1>
-            <div class="main__text">A jacket designed to give security to cyclists and to improve their visibility.</div>
+            <div class="main__text">A Jacket designed to give security to cyclists by improving their communication with other road actors and their visibility in the night.</div>
           </div>
           <div class="main__bg" data-aos>
             <div class="main__preview"><img srcset="img/figures-1.1@2x.png 2x" src="img/figures-1.1.png" alt=""></div>
@@ -88,11 +99,12 @@ if (localStorage.getItem('darkMode') === "on") {
               <div class="quality__preview"><img srcset="" src="" alt=""></div>
             </div>
             <div class="quality__wrap">
-              <h2 class="quality__title h2" data-aos="animation-scale-top" data-aos-duration="600">You're a night rider</h2>
-              <div class="quality__text">Even though the government has been working on the development of new bicycle lanes, a lot of them are in poor condition or are not continuous. This led cyclists to use the car lanes in order to arrive at their destination.</div>
+              <h2 class="quality__title h2" data-aos="animation-scale-top" data-aos-duration="600">You use the bike as daily means of transport</h2>
+              <div class="quality__text">But there are not enough bicycle lanes which makes you ride in the car lane, exposing your life.</div>
+              <div class="quality__text">There is no effective communication with the other road actors and using your hands to communicate your next movement doesn't mean that the car drivers know what you are going to do next.</div>
             </div>
           </div>
-          <div class="quality__bottom">
+          <!--div class="quality__bottom">
             <div class="quality__item">
               <div class="quality__counter">500,000<span class="quality__sign quality__sign_up">+</span></div>
               <div class="quality__category">Bicycle users</div>
@@ -105,20 +117,27 @@ if (localStorage.getItem('darkMode') === "on") {
               <div class="quality__counter">433</div>
               <div class="quality__category">Deaths of cyclists</div>
             </div>
+          </div-->
+          <div class="main">
+            <div class="main__center center">
+              <h1 class="main__title d2">
+                <span data-aos="animation-scale-top" data-aos-duration="600">Our solution? Road Lightning</span>
+              </h1>
           </div>
-        </div>
+          </div>
+            </div>
       </div>
       <div class="integrations">
         <div class="integrations__center center">
           <div class="integrations__wrap">
             <div class="stage">our features</div>
             <h2 class="integrations__title h2" data-aos="animation-scale-top" data-aos-duration="600">How it works?</h2>
-            <div class="integrations__text">We have developed a lightweight jacket for cyclists and drivers to stay safe at night</div>
+            <div class="integrations__text">The jacket comes with a set of lights designed to cover different needs that the cyclist might have on the road. Firstly, to give them more visibility, the night lights will turn on automatically whenever there is low light for example when riding behind a bridge or inside a tunnel. Also in terms of effective communication, we aim to unify it, using the same system that a car has. For that the jacket has directional and brake lights, the cyclist will use a remote control located on the handlebar of the bike can indicate if they are going to turn or if they are stopping, which will ensure a clear message for all the road actors.</div>
           </div>
           <div class="integrations__list">
             <div class="integrations__row">
               <div class="integrations__col">
-                <div class="integrations__logo" data-aos="animation-scale-top" data-aos-duration="600"><img style="width: 80px;" src="img/circuit-1.svg" alt=""></div>
+                <div class="integrations__logo" data-aos="animation-scale-top" data-aos-duration="600"><img style="width: 80px;" src="img/Product (F1).png" alt=""></div>
                 <div class="integrations__logo" data-aos="animation-scale-top" data-aos-duration="600"><img style="width: 80px;" src="img/rgb.svg" alt=""></div>
               </div>
               <div class="integrations__col">
@@ -128,7 +147,7 @@ if (localStorage.getItem('darkMode') === "on") {
               </div>
               <div class="integrations__col">
                 <div class="integrations__logo" data-aos="animation-scale-top" data-aos-duration="600"><img style="width: 80px;" src="img/diode.svg" alt=""></div>
-                <div class="integrations__logo" data-aos="animation-scale-top" data-aos-duration="600"><img style="width: 80px;" src="img/circuit.svg" alt=""></div>
+                <div class="integrations__logo" data-aos="animation-scale-top" data-aos-duration="600"><img style="width: 80px;" src="img/Product (F2).png" alt=""></div>
               </div>
             </div>
           </div>
@@ -141,8 +160,8 @@ if (localStorage.getItem('darkMode') === "on") {
             <div class="productivity__row">
               <div class="productivity__wrap">
                 <div class="stage"> Description</div>
-                <h2 class="productivity__title h2" data-aos="animation-scale-top" data-aos-duration="600">Creative <br> Powerful <br> Customizable</h2>
-                <div class="productivity__info">The whole system can be activated by the user whenever he wants to only by pressing a button located on the gloves</div>
+                <h2 class="productivity__title h2" data-aos="animation-scale-top" data-aos-duration="600">Creative, <br> Powerful, <br> Customizable</h2>
+                <div class="productivity__info">The jacket its 100% waterproof which ensures a comfortable ride without having to bring other elements such as raincoats. It is customizable to ensure a unique experience. Depending on your own needs and what do you like, you can choose the colour, amount of pockets (and its location), mark the jacket with your name, blood type and emergency contact and other available features, from which you can choose.</div>
               </div>
               <div class="productivity__gallery">
                 <div class="productivity__preview"><img srcset="img/figures-6.1@2x.png 2x" src="img/figures-6.1.png" alt=""></div>
@@ -151,11 +170,17 @@ if (localStorage.getItem('darkMode') === "on") {
               <div class="productivity__list">
                 <div class="productivity__item">
                   <div class="productivity__icon">
+                  </div>
+                  <div class="productivity__details">
+                  </div>
+                </div>
+                <div class="productivity__item">
+                  <div class="productivity__icon">
                     <img style="width: 40px;" src="img/directionals.svg" alt="">
                   </div>
                   <div class="productivity__details">
                     <div class="productivity__category" data-aos="animation-scale-top" data-aos-duration="600">Stationary lights</div>
-                    <div class="productivity__text">The stationary lights are located on the jacket sleeves which gives them a wide range so that everyone around you can see the signal</div>
+                    <div class="productivity__text">Located on the jacket sleeves, they ensure communication with other road actors inform them about your next movement.</div>
                   </div>
                 </div>
                 <div class="productivity__item">
@@ -164,7 +189,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   </div>
                   <div class="productivity__details">
                     <div class="productivity__category" data-aos="animation-scale-top" data-aos-duration="600">Brake lights</div>
-                    <div class="productivity__text">The brake light is located on the back part of the jacket to alert drivers close by</div>
+                    <div class="productivity__text">Located on the back part of the jacket, alert drivers and other cyclists that you are going to stop.</div>
                   </div>
                 </div>
                 <div class="productivity__item">
@@ -173,7 +198,7 @@ if (localStorage.getItem('darkMode') === "on") {
                   </div>
                   <div class="productivity__details">
                     <div class="productivity__category" data-aos="animation-scale-top" data-aos-duration="600">Visibility lights</div>
-                    <div class="productivity__text">Night lights are in the lower part of the back side and in the front are white lights to illuminate the road</div>
+                    <div class="productivity__text">The night lights are located in the front and in the back part of the jacket to make you visible at night and also to illuminate you the road.</div>
                   </div>
                 </div>
               </div>
